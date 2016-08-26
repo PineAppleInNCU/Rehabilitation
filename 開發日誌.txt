@@ -1,0 +1,3 @@
+先寫record.class 再回頭來修display
+
+record，想辦法驗證使用者是不是輸入int
