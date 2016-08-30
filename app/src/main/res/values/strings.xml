@@ -21,4 +21,6 @@
     <string name="leave">離開</string>
     <string name="no_record">沒有資料！</string>
     <string name="detail_data">詳細資料</string>
+    <string name="look_video">觀看影片</string>
+    <string name="look_example">觀看動作範例</string>
 </resources>
