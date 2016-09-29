@@ -9,9 +9,10 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class DBhelper extends SQLiteOpenHelper {
 
-    private static final int DATEBASE_VERSION =1;
+    private static final int DATEBASE_VERSION =2;
     private static final String DATABASE_NAME = "actions.db";
     public static final String TABLE_ACTIONS = "actions";//table  isn't equal to database name
+    public static final String TABLE_ACTIONS_2="pebble_actions";
     public static final String COLUMN_ID = "_id";
     public static final String COLUMN_NAME = "actionname";
     public static final String COLUMN_ACTIONDATA = "actiondata";
@@ -27,12 +28,19 @@ public class DBhelper extends SQLiteOpenHelper {
             +  COLUMN_DIFFERENCE_X + " TEXT  ,   "  +  COLUMN_DIFFERENCE_Y + " TEXT  ,   "  +  COLUMN_DIFFERENCE_Z + " TEXT    );";
 
 
+    //為了可以一次建立兩張table
+    public static final String CREATE_TABLE_SQL_2="  CREATE TABLE   " + TABLE_ACTIONS_2 + "(" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT ," + COLUMN_NAME
+            + "   TEXT ,  " + COLUMN_ACTIONDATA + "   TEXT  ,  "+ COLUMN_NUMBERS_OF_POINTE + " INTEGER  , "
+            +  COLUMN_DIFFERENCE_X + " TEXT  ,   "  +  COLUMN_DIFFERENCE_Y + " TEXT  ,   "  +  COLUMN_DIFFERENCE_Z + " TEXT    );";
+
+
     public DBhelper(Context context){
         super(context,DATABASE_NAME,null,DATEBASE_VERSION);
     }
     @Override
     public void onCreate(SQLiteDatabase db){
         db.execSQL(CREATE_TABLE_SQL);
+        db.execSQL(CREATE_TABLE_SQL_2);
     }
     @Override
     public void onUpgrade(SQLiteDatabase db , int oldVersion , int newVersion){

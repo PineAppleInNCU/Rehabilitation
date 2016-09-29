@@ -23,4 +23,12 @@
     <string name="detail_data">詳細資料</string>
     <string name="look_video">觀看影片</string>
     <string name="look_example">觀看動作範例</string>
+    <string name="user_pebble">use pebble</string>
+    <string name="add_video">匯入影片</string>
+    <string name="make_video">錄影</string>
+    <string name="start_recording">start recording</string>
+    <string name="play">play</string>
+    <string name="pause">pause</string>
+    <string name="restart">restart</string>
+    <string name="stop">stop</string>
 </resources>

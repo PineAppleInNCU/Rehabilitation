@@ -154,6 +154,8 @@ public class display_3 extends Activity implements SensorEventListener {
         start_test.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v){
+
+                start_test.setEnabled(false);
                 if(!starting_test){
 
                     starting_test=true;
@@ -169,6 +171,12 @@ public class display_3 extends Activity implements SensorEventListener {
                     aSensorManager.registerListener((SensorEventListener) context, aSensor, SensorManager.SENSOR_DELAY_NORMAL);
                     //註冊Gsensor監聽者//
                 }
+            }
+        });
+        leave.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                finish();
             }
         });
     }

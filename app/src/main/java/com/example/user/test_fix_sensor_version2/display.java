@@ -80,6 +80,7 @@ public class display extends Activity {
                                 long id) {
             // 取得 Cursor
             Cursor cursor = (Cursor) parent.getItemAtPosition(position);
+            int id_of_action=cursor.getInt(0);
             String action_name=cursor.getString(1);
             String action_data=cursor.getString(2);
             int number_point = cursor.getInt(3);
@@ -88,6 +89,7 @@ public class display extends Activity {
             String difference_z=cursor.getString(6);
             Intent intent = new Intent(context,display_2.class);
             Bundle extras = new Bundle();
+            extras.putInt("_id",id_of_action);
             extras.putString("action_name",action_name);
             extras.putString("action_data",action_data);
             extras.putInt("number_point",number_point);
@@ -100,6 +102,11 @@ public class display extends Activity {
 
             //lookdata(cursor);//display dialog
         }
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        refreshListView();
     }
 }
 

@@ -37,20 +37,6 @@
             android:id="@+id/button10"
             android:layout_gravity="center_horizontal" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/detail_data"
-            android:id="@+id/button13"
-            android:layout_gravity="center_horizontal" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/look_example"
-            android:id="@+id/button14"
-            android:layout_gravity="right" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -61,9 +47,26 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/add_video"
+            android:id="@+id/button18" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/make_video"
+            android:id="@+id/button19" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/look_example"
+            android:id="@+id/button14" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/back"
-            android:id="@+id/button11"
-            android:layout_gravity="center_horizontal" />
+            android:id="@+id/button11" />
     </LinearLayout>
 
 </LinearLayout>

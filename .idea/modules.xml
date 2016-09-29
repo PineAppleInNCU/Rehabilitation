@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Test_fix_sensor_version2.iml" filepath="$PROJECT_DIR$/Test_fix_sensor_version2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PebbleKit/PebbleKit.iml" filepath="$PROJECT_DIR$/PebbleKit/PebbleKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Rehabilitation.iml" filepath="$PROJECT_DIR$/Rehabilitation.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
